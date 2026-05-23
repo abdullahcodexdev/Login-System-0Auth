@@ -21,7 +21,15 @@
       "Bash(curl -s -o /dev/null -w \"127.0.0.1:8000/signin -> %{http_code}\\\\n\" \"http://127.0.0.1:8000/signin\")",
       "Bash(curl -s \"http://localhost:8000/\")",
       "Bash(cat)",
-      "Bash(php \"F:/AB Projects/Login System OAuth/_vt.php\")"
+      "Bash(php \"F:/AB Projects/Login System OAuth/_vt.php\")",
+      "Bash(git -c 'user.name=Muhammad Abdullah' -c user.email=muhammadabdullah7544@gmail.com commit -q -m 'Initial commit: Auth Studio OAuth login system *)",
+      "Bash(git branch *)",
+      "Bash(git remote *)",
+      "Bash(git push *)",
+      "Bash(composer update *)",
+      "Bash(echo \"APP_KEY=$\\(php artisan key:generate --show\\)\")",
+      "Bash(git add *)",
+      "Bash(git -c 'user.name=Muhammad Abdullah' -c user.email=muhammadabdullah7544@gmail.com commit -q -m 'Add Docker deployment config \\(Railway/Render-ready\\) and slim composer.lock *)"
     ],
     "additionalDirectories": [
       "F:\\AB Projects\\Login System OAuth\\storage\\framework\\cache",
