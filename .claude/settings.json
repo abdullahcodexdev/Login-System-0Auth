@@ -48,7 +48,9 @@
       "Bash(git init *)",
       "Bash(git -c 'user.name=Muhammad Abdullah' -c user.email=muhammadabdullah7544@gmail.com commit -q -m 'Add CV *)",
       "Bash(git credential *)",
-      "PowerShell(& cmd.exe /c \"`\"F:\\\\AB Projects\\\\push.bat`\"\" 2>&1)"
+      "PowerShell(& cmd.exe /c \"`\"F:\\\\AB Projects\\\\push.bat`\"\" 2>&1)",
+      "Bash(sed -i '/auto-push test/d' README.md)",
+      "Bash(sed -i -e :a -e '/^\\\\n*$/{$d;N;ba}' README.md)"
     ],
     "additionalDirectories": [
       "F:\\AB Projects\\Login System OAuth\\storage\\framework\\cache",

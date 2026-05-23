@@ -46,5 +46,3 @@ User accounts are stored in `storage/app/user-accounts.json`. No migrations need
 php artisan optimize:clear   # clear all caches (config, route, view, events)
 php artisan route:list       # list all routes
 ```
-
-<!-- auto-push test 17:51:15 -->
