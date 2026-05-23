@@ -1,0 +1,36 @@
+/vendor
+/node_modules
+/public/build
+/public/hot
+/public/storage
+/public/profile-avatars
+/public/oauth-avatars
+
+# Environment & secrets
+.env
+.env.backup
+.env.production
+auth.json
+
+# Laravel storage & cache
+/storage/*.key
+/storage/framework/cache/*
+!/storage/framework/cache/.gitkeep
+/storage/framework/sessions/*
+!/storage/framework/sessions/.gitkeep
+/storage/framework/views/*
+!/storage/framework/views/.gitkeep
+/storage/logs/*
+!/storage/logs/.gitkeep
+/bootstrap/cache/*
+!/bootstrap/cache/.gitkeep
+
+# User data (created at runtime)
+/storage/app/user-accounts.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea
+.vscode
+*.log

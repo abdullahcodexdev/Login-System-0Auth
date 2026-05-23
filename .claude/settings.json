@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell($src=\"C:\\\\xampp\\\\htdocs\\\\cloudconvert\"; $dst=\"F:\\\\AB Projects\\\\Login System OAuth\"; robocopy $src $dst /E /XD \".git\" \"node_modules\" \"$src\\\\public\\\\converted-downloads\" \"$src\\\\test-results\" \"$src\\\\storage\\\\framework\\\\cache\" \"$src\\\\storage\\\\framework\\\\sessions\" \"$src\\\\storage\\\\framework\\\\views\" \"$src\\\\public\\\\profile-avatars\" \"$src\\\\public\\\\oauth-avatars\" /XF \"conversion-history.json\" \"codex-test-download.pdf\" \"make-xls-test.php\" \"sample-test.txt\" \"sample-xls-test.xls\" \"xls-test-output.pdf\" /NFL /NDL /NJH /NJS /NP; Write-Output \"robocopy exit: $LASTEXITCODE\")",
+      "Bash(cd \"F:/AB Projects/Login System OAuth\" && mkdir -p storage/framework/cache/data storage/framework/sessions storage/framework/views storage/logs && echo \"created\" && echo \"=== HomeController ===\" && cat app/Http/Controllers/HomeController.php)",
+      "Bash(php artisan *)",
+      "Bash(curl -s -o /dev/null -w '%{http_code}' http://127.0.0.1:8000__TRACKED_VAR__)",
+      "Bash(curl -s -c /tmp/cj2.txt \"http://127.0.0.1:8000/signin\")",
+      "Bash(curl -s -b /tmp/cj2.txt -o /dev/null -w '%{http_code}' http://127.0.0.1:8000__TRACKED_VAR__)",
+      "Bash(curl -s -b /tmp/cj2.txt \"http://127.0.0.1:8000/profile\")",
+      "Bash(rm -f storage/logs/laravel.log)",
+      "Bash(echo \"\")",
+      "Bash(grep -rin 'my-files\\\\|whatsapp-chat\\\\|count\\($files\\)\\\\|FluxConvert\\\\|file conversion' resources/ app/ config/)",
+      "Bash(tail -3 storage/logs/laravel.log)",
+      "Read(//tmp/**)",
+      "Bash(cp /tmp/home.png \"F:/AB Projects/Login System OAuth/storage/home.png\")",
+      "Bash(cp /tmp/signin.png \"F:/AB Projects/Login System OAuth/storage/signin.png\")",
+      "Bash(rm -f \"F:/AB Projects/Login System OAuth/storage/home.png\" \"F:/AB Projects/Login System OAuth/storage/signin.png\" /tmp/home.png /tmp/signin.png; echo cleaned)",
+      "Bash(curl -s -o /dev/null -w \"home -> %{http_code}\\\\n\" \"http://localhost:8000/\")",
+      "Bash(curl -s -o /dev/null -w \"signin -> %{http_code}\\\\n\" \"http://localhost:8000/signin\")",
+      "Bash(curl -s -o /dev/null -w \"127.0.0.1:8000/signin -> %{http_code}\\\\n\" \"http://127.0.0.1:8000/signin\")",
+      "Bash(curl -s \"http://localhost:8000/\")",
+      "Bash(cat)",
+      "Bash(php \"F:/AB Projects/Login System OAuth/_vt.php\")"
+    ],
+    "additionalDirectories": [
+      "F:\\AB Projects\\Login System OAuth\\storage\\framework\\cache",
+      "\\tmp"
+    ]
+  }
+}

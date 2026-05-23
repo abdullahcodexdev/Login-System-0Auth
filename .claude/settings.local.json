@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls \"C:/xampp/htdocs/cloudconvert\")",
+      "Read(//c/xampp/htdocs/cloudconvert/**)",
+      "Bash(cat .env)",
+      "Bash(cat .env.example)",
+      "Bash(php -v)",
+      "Bash(composer --version)"
+    ]
+  }
+}
