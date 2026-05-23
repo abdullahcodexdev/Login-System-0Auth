@@ -29,11 +29,25 @@
       "Bash(composer update *)",
       "Bash(echo \"APP_KEY=$\\(php artisan key:generate --show\\)\")",
       "Bash(git add *)",
-      "Bash(git -c 'user.name=Muhammad Abdullah' -c user.email=muhammadabdullah7544@gmail.com commit -q -m 'Add Docker deployment config \\(Railway/Render-ready\\) and slim composer.lock *)"
+      "Bash(git -c 'user.name=Muhammad Abdullah' -c user.email=muhammadabdullah7544@gmail.com commit -q -m 'Add Docker deployment config \\(Railway/Render-ready\\) and slim composer.lock *)",
+      "Read(//f/AB Projects/**)",
+      "Read(//c/xampp/htdocs/**)",
+      "Read(//f/AB Portfolio/**)",
+      "Bash(git -C \"F:/AB Portfolio\" remote get-url origin)",
+      "Bash(git -C \"F:/AB Portfolio\" branch --show-current)",
+      "PowerShell($src = \"F:\\\\AB Portfolio\"; $dst = \"F:\\\\AB Projects\\\\AB Portfolio\"; if \\(Test-Path $dst\\) { Write-Output \"Destination already exists: $dst\" } else { Move-Item -Path $src -Destination $dst -ErrorAction Stop; Write-Output \"Moved successfully to: $dst\" })",
+      "PowerShell(Write-Output \"=== Port 8000/5500 listeners ===\"; Get-NetTCPConnection -State Listen -ErrorAction SilentlyContinue | Where-Object { $_.LocalPort -in 8000,5500,3000,5501 } | ForEach-Object { $p = Get-Process -Id $_.OwningProcess -ErrorAction SilentlyContinue; \"Port $\\($_.LocalPort\\) -> $\\($p.ProcessName\\) \\(PID $\\($_.OwningProcess\\)\\)\" }; Write-Output \"=== php/node processes ===\"; Get-Process php,node,Code -ErrorAction SilentlyContinue | Select-Object Id,ProcessName,Path | Format-Table -AutoSize | Out-String)",
+      "PowerShell(Get-CimInstance Win32_Process -Filter \"Name='php.exe' OR Name='python.exe'\" | Select-Object ProcessId, @{n='Cmd';e={$_.CommandLine}} | Format-List | Out-String)",
+      "PowerShell(Stop-Process -Id 10248 -Force -ErrorAction SilentlyContinue; Start-Sleep -Seconds 1; $src = \"F:\\\\AB Portfolio\"; $dst = \"F:\\\\AB Projects\\\\AB Portfolio\"; try { Move-Item -Path $src -Destination $dst -ErrorAction Stop; Write-Output \"MOVED: $dst\" } catch { Write-Output \"FAILED: $\\($_.Exception.Message\\)\" })",
+      "PowerShell($src = \"F:\\\\AB Portfolio\"; $dst = \"F:\\\\AB Projects\\\\AB Portfolio\"; robocopy $src $dst /E /COPY:DAT /R:1 /W:1 /NFL /NDL /NJH /NJS /NP | Out-Null; Write-Output \"robocopy exit: $LASTEXITCODE \\(0-7 = success\\)\"; if \\(Test-Path \"$dst\\\\.git\"\\) { Write-Output \".git copied: YES\" } else { Write-Output \".git copied: NO\" }; if \\(Test-Path \"$dst\\\\index.html\"\\) { Write-Output \"index.html: YES\" })",
+      "Bash(git -C \"F:/AB Projects/AB Portfolio\" remote get-url origin)",
+      "Bash(git -C \"F:/AB Projects/AB Portfolio\" status -s)",
+      "Bash(cmd //c \"push.bat\")"
     ],
     "additionalDirectories": [
       "F:\\AB Projects\\Login System OAuth\\storage\\framework\\cache",
-      "\\tmp"
+      "\\tmp",
+      "F:\\AB Projects"
     ]
   }
 }
